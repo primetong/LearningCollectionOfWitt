@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>D:\OpenCV\OpenCV3.3_VS2013_x64\install\include\opencv2;D:\OpenCV\OpenCV3.3_VS2013_x64\install\include\opencv;D:\OpenCV\OpenCV3.3_VS2013_x64\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OpenCV\OpenCV3.3_VS2013_x64\install\x64\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>opencv_calib3d330d.lib;opencv_core330d.lib;opencv_dnn330d.lib;opencv_features2d330d.lib;opencv_flann330d.lib;opencv_highgui330d.lib;opencv_imgcodecs330d.lib;opencv_imgproc330d.lib;opencv_ml330d.lib;opencv_objdetect330d.lib;opencv_photo330d.lib;opencv_shape330d.lib;opencv_stitching330d.lib;opencv_superres330d.lib;opencv_video330d.lib;opencv_videoio330d.lib;opencv_videostab330d.lib;opencv_aruco330d.lib;opencv_bgsegm330d.lib;opencv_ccalib330d.lib;opencv_datasets330d.lib;opencv_dpm330d.lib;opencv_face330d.lib;opencv_fuzzy330d.lib;opencv_line_descriptor330d.lib;opencv_optflow330d.lib;opencv_plot330d.lib;opencv_reg330d.lib;opencv_rgbd330d.lib;opencv_saliency330d.lib;opencv_stereo330d.lib;opencv_structured_light330d.lib;opencv_surface_matching330d.lib;opencv_text330d.lib;opencv_tracking330d.lib;opencv_xfeatures2d330d.lib;opencv_ximgproc330d.lib;opencv_xobjdetect330d.lib;opencv_xphoto330d.lib;opencv_bioinspired330d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
