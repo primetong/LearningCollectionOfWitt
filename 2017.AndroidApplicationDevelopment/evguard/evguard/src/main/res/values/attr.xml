@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageViewByXfermode">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageButton"> 
+        <attr name="defalutImg" format="reference"/>
+        <attr name="lightImg" format="reference"/>
+        <attr name="TextContext" format="string"/> 
+        <attr name="defalutTextColor" format="reference|color"/>
+        <attr name="lightTextColor" format="reference|color"/> 
+    </declare-styleable> 
+     <declare-styleable name="CustomTextButton"> 
+        <attr name="TextButton_Tip" format="string"/>
+        <attr name="TextButton_Context" format="string"/> 
+    </declare-styleable> 
+    
+     
+</resources>

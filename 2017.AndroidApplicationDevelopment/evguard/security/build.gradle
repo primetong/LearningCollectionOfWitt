@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+dependencies {
+    compile project(':web')
+    compile files('lib/android.jar')
+    targetCompatibility = '1.7'
+    sourceCompatibility = '1.7'
+}

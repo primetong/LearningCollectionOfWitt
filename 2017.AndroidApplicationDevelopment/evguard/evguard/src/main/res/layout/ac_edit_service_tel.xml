@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_index_pager"
+    android:orientation="vertical" >
+    <com.evguard.customview.AppTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="保险电话"
+            android:textColor="#8da6b9"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_insurance_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:padding="5dp"
+            android:text="4008000000"
+            android:textColor="#d3e2ed"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <ImageView 
+        android:id="@+id/iv_insurance_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_cross_p"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="报警电话"
+            android:textSize="18sp"
+            android:textColor="#8da6b9"
+            />
+        
+        <EditText 
+            android:id="@+id/et_alarm_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:text="110"
+            android:padding="5dp"
+            android:textColor="#d3e2ed"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:maxLength="15"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/iv_alarm_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_cross_n"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="代驾电话"
+            android:textSize="18sp"
+            android:textColor="#8da6b9"
+            />
+        
+        <EditText 
+            android:id="@+id/et_driving_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:text="135"
+            android:padding="5dp"
+            android:maxLength="15"
+            android:textColor="#d3e2ed"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:inputType="number"
+            />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/iv_driving_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_cross_n"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="4S店服务电话"
+            android:textSize="18sp"
+            android:textColor="#8da6b9"
+            />
+        
+        <EditText 
+            android:id="@+id/et_service_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:text="4008938938"
+            android:padding="5dp"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="#d3e2ed"
+            android:inputType="number"
+            android:textSize="20sp"
+            
+            />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/iv_service_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_cross_n"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="救援电话"
+            android:textSize="18sp"
+            android:textColor="#8da6b9"
+            />
+        
+        <EditText 
+            android:id="@+id/et_rescue_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:text="40081234567"
+            android:padding="5dp"
+            android:textColor="#d3e2ed"
+            android:maxLength="15"
+            android:inputType="number"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/iv_rescue_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_cross_n"
+        />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+  <!-- other density -->
+  <dimen name="win_width">384dip</dimen>
+  <dimen name="win_height">598dip</dimen>  
+  <dimen name="login_title">24dip</dimen>
+  <dimen name="login_content">20sp</dimen>  
+  <dimen name="indicator_left">20dip</dimen>
+  <dimen name="group_size">24dip</dimen>
+  <dimen name="child_size">18dip</dimen>  
+  <dimen name="track_btn">18dip</dimen>
+  <dimen name="time_setting_btn">18dip</dimen>  
+  <dimen name="time_text_size">18dip</dimen>  
+  <dimen name="title_bar">18dip</dimen>
+  <dimen name="login_user_title">22dip</dimen>  
+  <dimen name="stroke_size">3dip</dimen>  
+  <dimen name="welcome">30dip</dimen>
+  
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="historyscore_tb">10dp</dimen>
+  
+  <!-- 240 * 320 density   -->
+  <dimen name="win_width_240_320">240dip</dimen>
+  <dimen name="win_height_240_320">320dip</dimen>  
+  <dimen name="login_title_240_320">16dip</dimen>
+  <dimen name="login_content_240_320">14dip</dimen>
+  <dimen name="login_btn_content_240_320">14dip</dimen>
+  <dimen name="login_pwd_240_320">14dip</dimen> 
+  <dimen name="indicator_left_240_320">14dip</dimen>
+  <dimen name="group_size_240_320">14dip</dimen>
+  <dimen name="child_size_240_320">14dip</dimen>  
+  <dimen name="track_btn_240_320">13dip</dimen>
+  <dimen name="time_setting_btn_240_320">13dip</dimen>  
+  <dimen name="time_text_size_240_320">14dip</dimen>  
+  <dimen name="title_bar_240_320">18dip</dimen>
+  <dimen name="login_user_title_240_320">14dip</dimen>  
+  <dimen name="stroke_size_240_320">1dip</dimen>  
+  <dimen name="welcome_240_320">12dip</dimen>
+  <!-- 时间日期设置 -->
+  <dimen name="date_title_size">16dip</dimen>
+  <dimen name="date_width">220dip</dimen>
+  <dimen name="date_title_width">170dip</dimen>
+  <dimen name="date_title_height">35dip</dimen>
+  <dimen name="all_date_set_width">200dip</dimen>
+  <dimen name="all_date_set_height">115dip</dimen>
+  <dimen name="item_date_layout_width">50dip</dimen>
+  <dimen name="item_date_layout_height">95dip</dimen>
+  <dimen name="add_width">50dip</dimen>
+  <dimen name="add_height">38dip</dimen>
+  <dimen name="value_width">50dip</dimen>
+  <dimen name="value_height">32dip</dimen>
+  <dimen name="value_size">20dip</dimen>
+  <dimen name="minus_width">50dip</dimen>
+  <dimen name="minus_height">20dip</dimen>
+  <dimen name="set_width">190dip</dimen>
+  <dimen name="set_height">45dip</dimen>
+  <dimen name="set_over_width">90dip</dimen>
+  <dimen name="set_over_height">40dip</dimen>
+  <dimen name="set_btn_size">13dip</dimen>
+  
+  <!-- other density -->
+  <dimen name="guide_content_size">24dip</dimen>
+  <dimen name="btn_margion_bottom_size">10dip</dimen>
+  
+  <!-- new -->
+  <dimen name="txt_size_common">20sp</dimen>
+  <dimen name="txt_size_login">16sp</dimen>
+  <dimen name="delete_action_len">90dip</dimen>
+  
+    <dimen name="key_height">50dip</dimen>
+    
+</resources>

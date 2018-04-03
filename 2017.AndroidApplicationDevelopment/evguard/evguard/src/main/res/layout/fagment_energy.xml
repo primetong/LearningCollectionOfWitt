@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:audreyview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index_pager"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+    <RadioGroup
+        android:id="@+id/rg_query_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RadioButton
+            android:id="@+id/rb_day"
+            style="@style/EnergyQueryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="日" />
+
+        <RadioButton
+            android:id="@+id/rb_week"
+            style="@style/EnergyQueryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="周" />
+
+        <RadioButton
+            android:id="@+id/rb_month"
+            style="@style/EnergyQueryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="月" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <ImageButton
+            android:id="@+id/btn_to_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/icon_to_left" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5月 2015"
+                android:textColor="#667989"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="48sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_mileage"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_mileage"
+                android:paddingTop="10dp"
+                android:text="km"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mileage"
+                android:gravity="center"
+                android:text="行驶里程"
+                android:textColor="#97b1c2"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_to_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/icon_to_right" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+  <!--      <com.audrey.view.TableShowSurfaceview 
+     		     android:id="@+id/mytableview"
+     		     android:layout_width="match_parent"
+     		     android:layout_height="wrap_content"
+     		     android:layout_weight="1"
+     		    />-->
+        <com.evguard.customview.SplineChartView
+     		     android:id="@+id/mytableview"
+     		     android:layout_width="match_parent"
+     		     android:layout_height="match_parent"
+     		    /> 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_consume_electricity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#fd52ff"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_mileage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_mileage"
+                    android:text="kW·h"
+                    android:textColor="#7e93a2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mileage"
+                android:layout_margin="5dp"
+                android:text="消耗电量"
+                android:textColor="#97b1c2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_average_consumption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#4eff00"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_mileage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_mileage"
+                    android:text="kW·h/100km"
+                    android:textColor="#7e93a2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mileage"
+                android:layout_margin="5dp"
+                android:text="平均耗能"
+                android:textColor="#97b1c2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_economy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#e48219"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_mileage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_mileage"
+                    android:text="元/km"
+                    android:textColor="#7e93a2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mileage"
+                android:layout_margin="5dp"
+                android:text="经济性"
+                android:textColor="#97b1c2"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="@color/white">
+    
+    <com.evguard.customview.AppTitleBar
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+<FrameLayout 
+	    android:id="@+id/fl_main"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1">
+	   <LinearLayout 
+	    android:id="@+id/ll_map"  
+	    android:layout_width="match_parent"  
+	    android:layout_height="match_parent"  
+	    android:orientation="vertical"/>
+	  <com.evguard.customview.View_Track_CarPositionInfo
+	      android:id="@+id/view_carpostioninfo"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_gravity="top"
+	      android:visibility="gone"/>
+	  <!--  <include 
+		    layout="@layout/view_location_mapcontrol"
+		    android:id="@+id/ll_mapcontrol"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="right|bottom"
+		    android:layout_marginBottom="80dp"/> -->
+	    <include layout="@layout/view_track_playcontrol"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_gravity="bottom"/>
+
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/asynchrony/asynchrony.iml" filepath="$PROJECT_DIR$/asynchrony/asynchrony.iml" />
+      <module fileurl="file://$PROJECT_DIR$/audreyView/audreyView.iml" filepath="$PROJECT_DIR$/audreyView/audreyView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evguard.iml" filepath="$PROJECT_DIR$/evguard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evguard/evguard-evguard.iml" filepath="$PROJECT_DIR$/evguard/evguard-evguard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updating/updating.iml" filepath="$PROJECT_DIR$/updating/updating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xCLCharts/xCLCharts.iml" filepath="$PROJECT_DIR$/xCLCharts/xCLCharts.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index_pager"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_diagnose_up"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp" >
+
+            <ImageButton
+                android:id="@+id/iv_diagnose_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/img_diagnose_ready" />
+
+            <TextView
+                android:id="@+id/tv_diagnose_scroe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="78"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_check_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="共检测39项，没有发现故障"
+                android:textColor="@color/apptheme"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_diagnose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="点击左侧按钮开始诊断"
+                android:textColor="#d8e7f0"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_diagnose_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="扫描故障系统"
+                android:textColor="#7e98a7"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_last_diagnose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="24dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_last_diagnose_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="上一次诊断得分:"
+                    android:textColor="#7e98a7"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_last_diagnose_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="86"
+                    android:textColor="#ffbc07"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_last_diagnose_1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="上一次诊断时间:"
+                    android:textColor="#7e98a7"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_last_diagnose_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="2015.08.20 12:36"
+                    android:textColor="#7e98a7"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次得分"
+                android:textColor="#5d717e"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_result_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="98"
+                android:textColor="#1bdf4e"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜，您的爱车很健康，继续保持哦！"
+                android:textColor="#7e93a3"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/car1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/car1" />
+
+                <ImageView
+                    android:id="@+id/car1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/car1_1" />
+
+                <ImageView
+                    android:id="@+id/iv_ele_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/car1_1"
+                    android:layout_toEndOf="@id/car1_1"
+                    android:layout_toRightOf="@id/car1_1"
+                    android:src="@drawable/img_ele_control_n" />
+
+                <ImageView
+                    android:id="@+id/iv_whole_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/car1_1"
+                    android:layout_toLeftOf="@id/car1_1"
+                    android:layout_toStartOf="@id/car1_1"
+                    android:src="@drawable/img_whole_car_n" />
+
+                <ImageView
+                    android:id="@+id/iv_machine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/car1_1"
+                    android:layout_toEndOf="@id/car1_1"
+                    android:layout_toRightOf="@id/car1_1"
+                    android:src="@drawable/img_mechine_n" />
+
+                <ImageView
+                    android:id="@+id/iv_battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/car1"
+                    android:layout_toLeftOf="@id/car1_1"
+                    android:layout_toStartOf="@id/car1_1"
+                    android:src="@drawable/img_battery_n" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_car_tran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:src="@drawable/img_car_tran" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_cancle" 
+            android:visibility="gone"
+            android:text="取消"
+            android:textColor="#a5b8c6"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

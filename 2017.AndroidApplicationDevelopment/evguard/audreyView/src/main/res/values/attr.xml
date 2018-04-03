@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <declare-styleable name="ArcBar"> 
+        <attr name="ArcBottomColor" format="reference|color" />
+        <attr name="ArcColor" format="reference|color" />
+        <attr name="ArcBarValueColor" format="reference|color" />
+		<attr name="ArcTipColor" format="reference|color"/> 
+		
+        <attr name="ArcBottomStrokeWidth" format="dimension"/>
+        <attr name="ArcStrokeWidth" format="dimension"/>
+        
+        <attr name="ArcBarValueTextSize" format="dimension"/>
+        <attr name="ArcTipTextSize" format="dimension"/>
+        
+         <attr name="ArcMaxValue" format="integer"/>
+         <attr name="ArcMinValue" format="integer"/>
+       
+        <attr name="ArcTip" format="string"/> 
+       
+    </declare-styleable> 
+    
+ <declare-styleable name="CircleBar"> 
+        <attr name="CircleBottomColor" format="reference|color" />
+        <attr name="CircleColor" format="reference|color" />
+        <attr name="TextTipColor" format="reference|color" />
+		<attr name="TextValueColor" format="reference|color"/> 
+		
+        <attr name="CircleBottomStorkeWidth" format="dimension"/>
+        <attr name="CircleStorkeWidth" format="dimension"/>
+        
+        <attr name="CircleMaxValue" format="integer"/>
+        <attr name="TextTip" format="string"/> 
+         <attr name="TextValueSize" format="dimension"/>
+        <attr name="TextTipSize" format="dimension"/>
+        
+        <attr name="TextTitleColor" format="reference|color"/> 
+        <attr name="TextTitle" format="string"/> 
+        <attr name="TextTitleSize" format="dimension"/>
+       
+        
+       
+    </declare-styleable> 
+    
+ <declare-styleable name="wavePorterduffxfermode"> 
+  
+        <attr name="OutArcStrokeWidth" format="dimension"/>
+ 	    <attr name="OutArcColor" format="reference|color" />
+        <attr name="InArcColor" format="reference|color" />
+        <attr name="WaveMaxValue" format="integer"/>
+        <attr name="WaveTextTip" format="string"/> 
+        <attr name="WaveTextValueSize" format="dimension"/>
+        <attr name="WaveTextTipSize" format="dimension"/>
+
+    </declare-styleable> 
+    <declare-styleable name="tableshowview">
+        <attr name="AxisWidth" format="dimension" />
+        <attr name="AxisColor" format="reference|color" />
+        <attr name="DataLineWidth" format="dimension" />
+        <attr name="DataLineColor" format="reference|color" />
+        <attr name="AxisVlaueSize" format="dimension" />
+        <attr name="AxisValueColor" format="reference|color" />
+        <attr name="TableBackColor" format="reference|color" />
+
+    </declare-styleable> 
+</resources>

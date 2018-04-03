@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:background="@color/transparentinfo">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+        android:id="@+id/tv_carnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌号码"
+        style="@style/commtextview" />
+       <TextView
+        android:id="@+id/tv_gpstime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gps时间"
+        style="@style/commtextview" 
+        android:layout_marginLeft="15dp"/>
+       <TextView
+        android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="速度"
+        style="@style/commtextview"
+        android:layout_marginLeft="15dp" />
+   </LinearLayout>
+ 	<TextView
+     android:id="@+id/tv_showadd"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/commtextview"
+     android:text="显示位置"
+     android:padding="8dp"
+     android:textColor="@color/white"
+     android:background="@color/apptheme"/>
+ 	<TextView
+ 	    android:id="@+id/tv_address"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:singleLine="false"
+ 	    style="@style/commtextview"/>
+</LinearLayout>

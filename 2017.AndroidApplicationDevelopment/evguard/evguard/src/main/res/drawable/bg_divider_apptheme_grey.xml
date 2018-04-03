@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+     android:shape="line">
+    
+    <!-- 线的宽度，颜色主题  heiht必须大于with，否则线不显示-->  
+    <stroke android:width="0dp" android:color="#ff858484"></stroke>          
+    <size android:height="1dp"/>
+
+</shape>

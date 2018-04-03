@@ -1,0 +1,286 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From AudreyView:
+* AudreyView.iml
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\release\
+* build\generated\source\buildConfig\release\com\
+* build\generated\source\buildConfig\release\com\audrey\
+* build\generated\source\buildConfig\release\com\audrey\view\
+* build\generated\source\buildConfig\release\com\audrey\view\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\release\
+* build\generated\source\r\release\com\
+* build\generated\source\r\release\com\audrey\
+* build\generated\source\r\release\com\audrey\view\
+* build\generated\source\r\release\com\audrey\view\R.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\release\
+* build\intermediates\bundles\release\AndroidManifest.xml
+* build\intermediates\bundles\release\R.txt
+* build\intermediates\bundles\release\aapt\
+* build\intermediates\bundles\release\aapt\AndroidManifest.xml
+* build\intermediates\bundles\release\classes.jar
+* build\intermediates\bundles\release\libs\
+* build\intermediates\bundles\release\libs\android-support-v4.jar
+* build\intermediates\bundles\release\res\
+* build\intermediates\bundles\release\res\drawable-hdpi-v4\
+* build\intermediates\bundles\release\res\drawable-hdpi-v4\ic_launcher.png
+* build\intermediates\bundles\release\res\drawable-mdpi-v4\
+* build\intermediates\bundles\release\res\drawable-mdpi-v4\ic_launcher.png
+* build\intermediates\bundles\release\res\drawable-xhdpi-v4\
+* build\intermediates\bundles\release\res\drawable-xhdpi-v4\ic_launcher.png
+* build\intermediates\bundles\release\res\drawable-xxhdpi-v4\
+* build\intermediates\bundles\release\res\drawable-xxhdpi-v4\circle_500.png
+* build\intermediates\bundles\release\res\drawable-xxhdpi-v4\ic_launcher.png
+* build\intermediates\bundles\release\res\drawable-xxhdpi-v4\wave_2000.png
+* build\intermediates\bundles\release\res\menu\
+* build\intermediates\bundles\release\res\menu\main.xml
+* build\intermediates\bundles\release\res\values-sw720dp-land-v13\
+* build\intermediates\bundles\release\res\values-sw720dp-land-v13\values-sw720dp-land-v13.xml
+* build\intermediates\bundles\release\res\values-v11\
+* build\intermediates\bundles\release\res\values-v11\values-v11.xml
+* build\intermediates\bundles\release\res\values-v14\
+* build\intermediates\bundles\release\res\values-v14\values-v14.xml
+* build\intermediates\bundles\release\res\values\
+* build\intermediates\bundles\release\res\values\values.xml
+* build\intermediates\classes\
+* build\intermediates\classes\release\
+* build\intermediates\classes\release\com\
+* build\intermediates\classes\release\com\audrey\
+* build\intermediates\classes\release\com\audrey\mode\
+* build\intermediates\classes\release\com\audrey\mode\TableShowViewData.class
+* build\intermediates\classes\release\com\audrey\view\
+* build\intermediates\classes\release\com\audrey\view\ArcBar.class
+* build\intermediates\classes\release\com\audrey\view\BuildConfig.class
+* build\intermediates\classes\release\com\audrey\view\CircleBar.class
+* build\intermediates\classes\release\com\audrey\view\PorterDuffXfermodeView$1.class
+* build\intermediates\classes\release\com\audrey\view\PorterDuffXfermodeView.class
+* build\intermediates\classes\release\com\audrey\view\R$attr.class
+* build\intermediates\classes\release\com\audrey\view\R$color.class
+* build\intermediates\classes\release\com\audrey\view\R$dimen.class
+* build\intermediates\classes\release\com\audrey\view\R$drawable.class
+* build\intermediates\classes\release\com\audrey\view\R$id.class
+* build\intermediates\classes\release\com\audrey\view\R$menu.class
+* build\intermediates\classes\release\com\audrey\view\R$string.class
+* build\intermediates\classes\release\com\audrey\view\R$style.class
+* build\intermediates\classes\release\com\audrey\view\R$styleable.class
+* build\intermediates\classes\release\com\audrey\view\R.class
+* build\intermediates\classes\release\com\audrey\view\TableShowSurfaceview$DrawThread.class
+* build\intermediates\classes\release\com\audrey\view\TableShowSurfaceview$ISurfaceEvent.class
+* build\intermediates\classes\release\com\audrey\view\TableShowSurfaceview.class
+* build\intermediates\classes\release\com\audrey\view\TableShowView$ChangePosition.class
+* build\intermediates\classes\release\com\audrey\view\TableShowView.class
+* build\intermediates\classes\release\com\audrey\view\UiUtils.class
+* build\intermediates\classes\release\com\audrey\view\WaterWaveView$1.class
+* build\intermediates\classes\release\com\audrey\view\WaterWaveView$SavedState$1.class
+* build\intermediates\classes\release\com\audrey\view\WaterWaveView$SavedState.class
+* build\intermediates\classes\release\com\audrey\view\WaterWaveView.class
+* build\intermediates\classes\release\com\audrey\view\Wave_SinBar$1.class
+* build\intermediates\classes\release\com\audrey\view\Wave_SinBar.class
+* build\intermediates\classes\release\com\audrey\view\Wave_StanderSin$1.class
+* build\intermediates\classes\release\com\audrey\view\Wave_StanderSin.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\compileReleaseAidl\
+* build\intermediates\incremental\compileReleaseAidl\dependency.store
+* build\intermediates\incremental\mergeReleaseAssets\
+* build\intermediates\incremental\mergeReleaseAssets\merger.xml
+* build\intermediates\incremental\mergeReleaseJniLibFolders\
+* build\intermediates\incremental\mergeReleaseJniLibFolders\merger.xml
+* build\intermediates\incremental\mergeReleaseShaders\
+* build\intermediates\incremental\mergeReleaseShaders\merger.xml
+* build\intermediates\incremental\packageReleaseResources\
+* build\intermediates\incremental\packageReleaseResources\merger.xml
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\AudreyView-release.aar
+* ic_launcher-web.png
+* proguard-project.txt
+From XCL-Charts:
+* XCL-Charts.iml
+* ic_launcher-web.png
+* proguard-project.txt
+From asynchrony:
+* asynchrony.iml
+* asynchrony\
+* asynchrony\.classpath
+* asynchrony\.project
+* asynchrony\.settings\
+* asynchrony\.settings\org.eclipse.jdt.core.prefs
+* asynchrony\libs\
+* asynchrony\libs\android.jar
+* asynchrony\src\
+* asynchrony\src\com\
+* asynchrony\src\com\xinghaicom\
+* asynchrony\src\com\xinghaicom\asynchrony\
+* asynchrony\src\com\xinghaicom\asynchrony\LoopHandler.java
+* asynchrony\src\com\xinghaicom\asynchrony\Looping.java
+From evguard:
+* hs_err_pid6484.log
+* ic_launcher-web.png
+* proguard-project.txt
+From exception:
+* exception.iml
+From security:
+* security.iml
+From updating:
+* updating.iml
+From web:
+* web.iml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In AudreyView:
+* AndroidManifest.xml => audreyView\src\main\AndroidManifest.xml
+* res\ => audreyView\src\main\res\
+* src\ => audreyView\src\main\java\
+In XCL-Charts:
+* AndroidManifest.xml => xCLCharts\src\main\AndroidManifest.xml
+* lint.xml => xCLCharts\lint.xml
+* res\ => xCLCharts\src\main\res\
+* src\ => xCLCharts\src\main\java\
+In asynchrony:
+* libs\android.jar => asynchrony\libs\android.jar
+* src\ => asynchrony\src\main\java\
+In exception:
+* src\ => exception\src\main\java\
+In updating:
+* lib\android.jar => updating\lib\android.jar
+* src\ => updating\src\main\java\
+In web:
+* lib\android.jar => web\lib\android.jar
+* src\ => web\src\main\java\
+In security:
+* lib\android.jar => security\lib\android.jar
+* src\ => security\src\main\java\
+In evguard:
+* AndroidManifest.xml => evguard\src\main\AndroidManifest.xml
+* assets\ => evguard\src\main\assets\
+* libs\Android_Location_V1.3.0.jar => evguard\libs\Android_Location_V1.3.0.jar
+* libs\armeabi\libBaiduMapSDK_v3_5_0_15.so => evguard\src\main\jniLibs\armeabi\libBaiduMapSDK_v3_5_0_15.so
+* libs\armeabi\libjpush173.so => evguard\src\main\jniLibs\armeabi\libjpush173.so
+* libs\armeabi\liblocSDK5.so => evguard\src\main\jniLibs\armeabi\liblocSDK5.so
+* libs\baidu_mobstat_android_api.jar => evguard\libs\baidu_mobstat_android_api.jar
+* libs\BaiduLBS_Android.jar => evguard\libs\BaiduLBS_Android.jar
+* libs\jpush-sdk-release1.7.3.jar => evguard\libs\jpush-sdk-release1.7.3.jar
+* libs\nineoldandroids-2.4.0.jar => evguard\libs\nineoldandroids-2.4.0.jar
+* res\ => evguard\src\main\res\
+* src\ => evguard\src\main\java\
+* src\com\evguard\bmap\symbol\1\0.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\0.png
+* src\com\evguard\bmap\symbol\1\10.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\10.png
+* src\com\evguard\bmap\symbol\1\11.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\11.png
+* src\com\evguard\bmap\symbol\1\110.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\110.png
+* src\com\evguard\bmap\symbol\1\111.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\111.png
+* src\com\evguard\bmap\symbol\1\112.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\112.png
+* src\com\evguard\bmap\symbol\1\113.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\113.png
+* src\com\evguard\bmap\symbol\1\114.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\114.png
+* src\com\evguard\bmap\symbol\1\115.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\115.png
+* src\com\evguard\bmap\symbol\1\116.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\116.png
+* src\com\evguard\bmap\symbol\1\12.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\12.png
+* src\com\evguard\bmap\symbol\1\13.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\13.png
+* src\com\evguard\bmap\symbol\1\14.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\14.png
+* src\com\evguard\bmap\symbol\1\15.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\15.png
+* src\com\evguard\bmap\symbol\1\16.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\16.png
+* src\com\evguard\bmap\symbol\1\17.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\17.png
+* src\com\evguard\bmap\symbol\1\18.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\18.png
+* src\com\evguard\bmap\symbol\1\19.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\19.png
+* src\com\evguard\bmap\symbol\1\2.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\2.png
+* src\com\evguard\bmap\symbol\1\4.gif => evguard\src\main\resources\com\evguard\bmap\symbol\1\4.gif
+* src\com\evguard\bmap\symbol\1\5.gif => evguard\src\main\resources\com\evguard\bmap\symbol\1\5.gif
+* src\com\evguard\bmap\symbol\1\currentCarFlag.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\currentCarFlag.png
+* src\com\evguard\bmap\symbol\1\currentCarFlagb.png => evguard\src\main\resources\com\evguard\bmap\symbol\1\currentCarFlagb.png
+* src\com\evguard\bmap\symbol\2\0.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\0.png
+* src\com\evguard\bmap\symbol\2\04.gif => evguard\src\main\resources\com\evguard\bmap\symbol\2\04.gif
+* src\com\evguard\bmap\symbol\2\10.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\10.png
+* src\com\evguard\bmap\symbol\2\11.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\11.png
+* src\com\evguard\bmap\symbol\2\110.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\110.png
+* src\com\evguard\bmap\symbol\2\111.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\111.png
+* src\com\evguard\bmap\symbol\2\112.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\112.png
+* src\com\evguard\bmap\symbol\2\113.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\113.png
+* src\com\evguard\bmap\symbol\2\114.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\114.png
+* src\com\evguard\bmap\symbol\2\115.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\115.png
+* src\com\evguard\bmap\symbol\2\116.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\116.png
+* src\com\evguard\bmap\symbol\2\12.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\12.png
+* src\com\evguard\bmap\symbol\2\13.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\13.png
+* src\com\evguard\bmap\symbol\2\14.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\14.png
+* src\com\evguard\bmap\symbol\2\15.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\15.png
+* src\com\evguard\bmap\symbol\2\16.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\16.png
+* src\com\evguard\bmap\symbol\2\17.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\17.png
+* src\com\evguard\bmap\symbol\2\18.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\18.png
+* src\com\evguard\bmap\symbol\2\19.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\19.png
+* src\com\evguard\bmap\symbol\2\currentCarFlag.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\currentCarFlag.png
+* src\com\evguard\bmap\symbol\2\currentCarFlagb.png => evguard\src\main\resources\com\evguard\bmap\symbol\2\currentCarFlagb.png
+* src\com\evguard\bmap\symbol\3\0.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\0.png
+* src\com\evguard\bmap\symbol\3\10.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\10.png
+* src\com\evguard\bmap\symbol\3\11.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\11.png
+* src\com\evguard\bmap\symbol\3\110.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\110.png
+* src\com\evguard\bmap\symbol\3\111.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\111.png
+* src\com\evguard\bmap\symbol\3\112.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\112.png
+* src\com\evguard\bmap\symbol\3\113.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\113.png
+* src\com\evguard\bmap\symbol\3\114.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\114.png
+* src\com\evguard\bmap\symbol\3\115.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\115.png
+* src\com\evguard\bmap\symbol\3\116.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\116.png
+* src\com\evguard\bmap\symbol\3\12.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\12.png
+* src\com\evguard\bmap\symbol\3\13.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\13.png
+* src\com\evguard\bmap\symbol\3\14.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\14.png
+* src\com\evguard\bmap\symbol\3\15.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\15.png
+* src\com\evguard\bmap\symbol\3\16.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\16.png
+* src\com\evguard\bmap\symbol\3\17.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\17.png
+* src\com\evguard\bmap\symbol\3\18.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\18.png
+* src\com\evguard\bmap\symbol\3\19.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\19.png
+* src\com\evguard\bmap\symbol\3\currentCarFlag.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\currentCarFlag.png
+* src\com\evguard\bmap\symbol\3\currentCarFlagb.png => evguard\src\main\resources\com\evguard\bmap\symbol\3\currentCarFlagb.png
+* src\com\evguard\bmap\symbol\bubble.9.png => evguard\src\main\resources\com\evguard\bmap\symbol\bubble.9.png
+* src\com\evguard\bmap\symbol\expander.9.png => evguard\src\main\resources\com\evguard\bmap\symbol\expander.9.png
+* sym_keyboard_left.PNG => sym_keyboard_left.png
+* sym_keyboard_right.PNG => sym_keyboard_right.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

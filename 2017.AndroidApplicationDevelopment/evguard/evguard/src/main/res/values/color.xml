@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="apptheme_yellow">#ffffd20a</color>
+<color name="apptheme_black">#ff4c4c4c</color>
+<color name="apptheme_grey">#11f5f4f0</color>
+    <color name="transparentinfo">#d922292e</color>
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="line">#16b935</color>
+    <!-- 自定义Dialog的背景颜色 -->
+    <color name="dialog_bg">#ffe74c3c</color>
+    <!-- 自定义Dialog的字体的颜色 -->
+    <color name="text_color">#FFFFFF</color>
+    <!-- 自定义Dialog的标题同内容部分的分割线 -->
+    <color name="divider_color">#11000000</color>
+    <!-- 自定义Dialog信息部分文字的颜色 -->
+    <color name="msg_color">#FFFFFFFF</color>
+    <!-- 自定义Dialog中button点击时的颜色 -->
+    <color name="btn_press_color">#FFa5281b</color>
+    <!-- 自定义Dialog中button未点击时的颜色 -->
+    <color name="btn_unpress_color">#FFc0392b</color>
+    <!-- 黑色字体颜色 -->
+    <color name="textcolor_black">#000000</color>
+    <!-- 浅灰色字体颜色 -->
+    <color name="textcolor_light_grey">#807e7a</color>
+    <!-- 红色字体颜色 -->
+    <color name="textcolor_red">#e30000</color>
+    <!-- 红色字体颜色 -->
+    <color name="textcolor_green">#22ad38</color>
+    <!-- 非保险橘黄色字体颜色 -->
+    <color name="not_surance_yellow">#ffbb38</color>
+    <!-- 保险蓝色字体颜色 -->
+    <color name="surance_blue">#3598da</color>
+    <!-- 浅蓝色字体颜色 -->
+    <color name="light_blue">#E5F2FD</color>
+    <!-- 默认背景颜色，灰白 -->
+    <color name="base_bg">#FBFBFB</color>
+    <!-- 首页上方边框的颜色，深灰 -->
+    <color name="home_border_dark_gray">#E1E1E1</color>
+    <!-- 首页上方三个环形进度条布局的背景颜色，浅灰 -->
+    <color name="home_bg_light_gray">#F5F5F5</color>
+    <!-- 首页上方三个环形进度条文字的颜色，浅黑 -->
+    <color name="home_text_light_black">#333333</color>
+    <!-- 首页上方左侧个人信息代用名文字的颜色，略深黑 -->
+    <color name="home_text_little_dark_black">#323232</color>
+    <!-- 首页上方环形进度条的颜色，蓝色 -->
+    <color name="home_round_progress_bar_blue">#ff3896F3</color>
+    <!-- 首页上方环形进度条的默认颜色，灰色 -->
+    <color name="home_round_progress_bar_default_gray">#D1D1D1</color>
+    <color name="dialog_pressed_bg_color">#919191</color>
+    <!-- dialog条目默认的显示的背景 -->
+    <color name="dialog_unpressed_bg_color">#FFFFFF</color>
+    <!-- dialog背景半透明 -->
+    <color name="black_more_half">#55111111</color>
+    <!-- dialog的ok按钮未选择的颜色 -->
+    <color name="tip_dialog_ok_btn_ina_color">#a39b93</color>
+    <!-- dialog的ok按钮选择的颜色 -->
+    <color name="tip_dialog_ok_btn_a_color">#f5f5f5</color>
+    <!-- layoutRipple 的波纹色 淡蓝色 -->
+    <color name="layoutRipple_color">#1E88E5</color>
+    <!-- layoutRipple 的波纹色 淡蓝色 -->
+    <color name="left_item_color">#0000ee</color>
+    <color name="corner_border_color">#F3F4F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF3030</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="l_blue">#53CB9B</color>
+    <color name="green">#228B22</color>
+    <color name="green_2">#00FF00</color>
+    <color name="orange">#FFA500</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="purple">#9B30FF</color>
+    <color name="sky_blue">#00BFFF</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="bisque">#FFE4C4</color>
+    <color name="honeydew">#F0FFF0</color>
+    <color name="olive_drab">#C0FF3E</color>
+    <color name="dim_grey">#696969</color>
+    <color name="mediumseagreen">#3CB371</color>
+    <!-- 中海蓝 -->
+    <color name="mediumseablue">#3088F6</color>
+    <!-- 中海蓝 -->
+    <color name="start_login_bg_color">#70696969</color>
+    <color name="center_login_bg_color">#40696969</color>
+    <color name="end_login_bg_color">#70696969</color>
+    <color name="login_content_color">#FFFFFF</color>
+    <color name="start_lists_bg_color">#379F9F9F</color>
+    <color name="center_lists_bg_color">#279F9F9F</color>
+    <color name="end_lists_bg_color">#179F9F9F</color>
+    <color name="back_btn_bg_color">#E7404040</color>
+    <color name="driver_color">#FFFF00</color>
+    <color name="track_btn_color">#000000</color>
+    <!-- <color name="time_text_color">#6B8E23</color> -->
+    <color name="time_text_color">#000000</color>
+    <color name="time_title_color">#228B22</color>
+    <color name="title_bar">#FFFFFF</color>
+    <color name="login_user_title">#FFFF00</color>
+    <color name="stroke_color">#CD853F</color>
+    <color name="welcome">#FF8C00</color>
+    <color name="speed_color">#FFFF00</color>
+    <color name="pure_blue_bg">#3adfff</color>
+    <color name="text_selected_bg">#ff0b64bd</color>
+    <color name="text_normal_bg">#ff5e8ebd</color>
+    <!--
+    <color name="text_selected_bg">#696969</color>
+    <color name="text_normal_bg">#505050</color>
+    -->
+    <color name="text_item_selected_bg">#4f4D4B46</color>
+    <color name="text_item_normal_bg">#000000</color>
+    <color name="font_gravy">#ffA2A2A2</color>
+    <color name="font_blue">#ff2F66B8</color>
+    <color name="font_orange">#ffF95B00</color>
+    <color name="tipcolor">#7b807b</color>
+    <color name="lightblack">#7b807b</color>
+    <color name="lightlightblack">#6f746f</color>
+    <color name="apptheme">#ffd800</color>
+    <color name="grey">#898989</color>
+    <color name="gray_color">#888888</color>
+    <color name="menu_common_txt_color">#d0d0d0</color>
+    <color name="energy_textColor_unselected">#97b1c2</color>
+    <color name="message_textColor_pressed">#bfe3ff</color>
+
+</resources>

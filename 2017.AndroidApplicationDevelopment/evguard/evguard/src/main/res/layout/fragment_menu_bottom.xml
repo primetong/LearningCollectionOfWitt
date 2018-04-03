@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customButton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_smallcontent_p"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp" >
+
+    <com.evguard.customview.customImageButton
+        android:id="@+id/custombutton_startpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"          
+        customButton:TextContext="首页"
+        customButton:defalutImg="@drawable/icon_index_n"
+        customButton:defalutTextColor="@color/grey"
+        customButton:lightImg="@drawable/icon_index_p"
+        android:tag="custombutton_startpage"
+        customButton:lightTextColor="@color/apptheme" />
+
+    <com.evguard.customview.customImageButton
+        android:id="@+id/custombutton_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        customButton:TextContext="充电"
+        customButton:defalutImg="@drawable/icon_charging_n"
+        customButton:defalutTextColor="@color/grey"
+        customButton:lightImg="@drawable/icon_charging_p"
+        customButton:lightTextColor="@color/apptheme"
+        android:tag="custombutton_battery" />
+
+    <com.evguard.customview.customImageButton
+        android:id="@+id/custombutton_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        customButton:TextContext="能耗"
+        customButton:defalutImg="@drawable/icon_energy_n"
+        customButton:defalutTextColor="@color/grey"
+        customButton:lightImg="@drawable/icon_energy_p"
+        customButton:lightTextColor="@color/apptheme" 
+        android:tag="custombutton_energy"/>
+
+    <com.evguard.customview.customImageButton
+        android:id="@+id/custombutton_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        customButton:TextContext="位置"
+        customButton:defalutImg="@drawable/icon_position_n"
+        customButton:defalutTextColor="@color/grey"
+        customButton:lightImg="@drawable/icon_position_p"
+        customButton:lightTextColor="@color/apptheme"
+        android:tag="custombutton_track" />
+
+    <com.evguard.customview.customImageButton
+        android:id="@+id/custombutton_diagnose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        customButton:TextContext="诊断"
+        customButton:defalutImg="@drawable/icon_medical_n"
+        customButton:defalutTextColor="@color/grey"
+        customButton:lightImg="@drawable/icon_medical_p"
+        customButton:lightTextColor="@color/apptheme"
+        android:tag="custombutton_diagnose" />
+
+</LinearLayout>

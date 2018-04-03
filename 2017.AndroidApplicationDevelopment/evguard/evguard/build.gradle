@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.xinghaicom.evguard"
+        minSdkVersion 11
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':audreyView')
+    compile project(':xCLCharts')
+    compile project(':asynchrony')
+    compile project(':exception')
+    compile project(':security')
+    compile project(':web')
+    compile project(':updating')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('libs/Android_Location_V1.3.0.jar')
+    compile files('libs/baidu_mobstat_android_api.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/jpush-sdk-release1.7.3.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+}

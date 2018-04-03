@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index_pager"
+    android:orientation="vertical" >
+
+    <com.evguard.customview.AppTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="电量过低提醒"
+                android:textColor="#7193ad"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_battery_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="0%"
+                android:textSize="18sp"
+                android:textColor="@color/apptheme" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cross_n" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="电量温度过高提醒"
+                android:textColor="#7193ad"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/bt_high_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:padding="10dp"
+                android:src="@drawable/icon_aa_off" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cross_n" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="车门未关提醒"
+                android:textColor="#7193ad"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_door_unclose_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="0分钟"
+                android:textSize="18sp"
+                android:textColor="@color/apptheme" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cross_n" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="胎压故障提醒"
+                android:textColor="#7193ad"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/bt_tire_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:padding="10dp"
+                android:src="@drawable/icon_aa_off" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cross_n" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="充电状态提醒"
+                android:textColor="#7193ad"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/bt_charge_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:padding="10dp"
+                android:src="@drawable/icon_aa_off" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cross_n" />
+    </TableLayout>
+
+</LinearLayout>

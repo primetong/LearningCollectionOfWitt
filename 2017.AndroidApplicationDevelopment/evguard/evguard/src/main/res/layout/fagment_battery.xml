@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:audreyview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index_pager"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_uncharging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+         >
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <ImageView 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/img_un_charge"
+			android:layout_weight="1"
+            />
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="充电未连接"
+            android:gravity="center"
+            android:textColor="#e25934"
+            />
+        </LinearLayout>
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <com.audrey.view.CircleBar
+            android:id="@+id/fastCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            audreyview:CircleBottomColor="#ff22292f"
+            audreyview:CircleBottomStorkeWidth="8dp"
+            audreyview:CircleColor="#ff279fde"
+            audreyview:CircleMaxValue="100"
+            audreyview:CircleStorkeWidth="8dp"
+            audreyview:TextTip="次"
+            audreyview:TextTipColor="#ff97b1c2"
+            audreyview:TextTipSize="15sp"
+            audreyview:TextValueColor="#ff279fde"
+            audreyview:TextValueSize="30sp"
+            audreyview:TextTitle="快充"
+            audreyview:TextTitleSize="15sp"
+             />
+
+        <com.audrey.view.CircleBar
+            android:id="@+id/rowCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+             audreyview:CircleBottomColor="#ff22292f"
+            audreyview:CircleBottomStorkeWidth="8dp"
+            audreyview:CircleColor="#fff5a700"
+            audreyview:CircleMaxValue="100"
+            audreyview:CircleStorkeWidth="8dp"
+            audreyview:TextTip="次"
+            audreyview:TextTipColor="#ff97b1c2"
+            audreyview:TextTipSize="15sp"
+            audreyview:TextValueColor="#fff5a700"
+            audreyview:TextValueSize="30sp"
+             audreyview:TextTitle="慢充"
+            audreyview:TextTitleSize="15sp" />
+            
+        </LinearLayout>
+         
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_charging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:visibility="gone"
+         >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <com.audrey.view.PorterDuffXfermodeView
+                android:id="@+id/wavebar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                audreyview:OutArcStrokeWidth="10dp"
+			 audreyview:OutArcColor="#ff59778f"
+			 audreyview:InArcColor="#ff2e373e"
+			 audreyview:WaveMaxValue="100"
+			 audreyview:WaveTextValueSize="50sp"
+			 audreyview:WaveTextTipSize="15sp"
+     		 audreyview:WaveTextTip="正在充电" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充电剩余时间"
+                android:textColor="#97b1c2"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_charge_remainder_time_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="2"
+                    android:textColor="#0ae270"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="h"
+                    android:textColor="#97b1c2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_charge_remainder_time_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="37"
+                    android:textColor="#0ae270"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:textColor="#97b1c2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_electricity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="220"
+                        android:textColor="#994ffd"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="V"
+                        android:textColor="#7e93a2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电压"
+                    android:textColor="#97b1c2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/img_cross_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_voltage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40/40"
+                        android:textColor="#1996e6"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="A"
+                        android:textColor="#7e93a2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电流"
+                    android:textColor="#97b1c2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

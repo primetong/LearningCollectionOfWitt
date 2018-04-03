@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+    <!-- 自定义消息对话框 -->
+	<TextView 
+	    android:id="@+id/info"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:minHeight="100dp"
+	    android:textSize="20sp"
+	    android:textColor="@color/blue"
+	    android:gravity="left|center_vertical"/>
+	<Button 
+	    android:id="@+id/ok"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:paddingTop="8dp"
+	    android:paddingBottom="8dp"
+	    android:background="@drawable/ic_launcher"
+	    android:text="@string/ok"
+	    android:textColor="@color/white"/>
+</LinearLayout>

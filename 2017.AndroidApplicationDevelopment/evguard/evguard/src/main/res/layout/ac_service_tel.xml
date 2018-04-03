@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index_pager"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.evguard.customview.AppTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+         >
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="保险电话： "
+            android:textSize="16sp"
+            android:textColor="#8da6b9" />
+
+        <TextView
+            android:id="@+id/tv_insurance_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_alignLeft="@id/tv_1"
+            android:layout_marginTop="3dp"
+            android:text="4008000000"
+            android:textSize="18sp"
+            android:textColor="#00d8ff" />
+
+        <ImageButton
+            android:id="@+id/bt_insurance_tel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_tel" />
+        
+    </RelativeLayout>
+     <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/img_cross_n"
+             />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+         >
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="报警电话： "
+            android:textSize="16sp"
+            android:textColor="#8da6b9" />
+
+        <TextView
+            android:id="@+id/tv_alarm_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_3"
+            android:layout_alignLeft="@id/tv_3"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"
+            android:text="110"
+            android:textColor="#00d8ff" />
+
+        <ImageButton
+            android:id="@+id/bt_alarm_tel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_tel" />
+        
+    </RelativeLayout>
+     <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/img_cross_n"
+             />
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="代驾电话： "
+            android:textSize="16sp"
+            android:textColor="#8da6b9" />
+
+        <TextView
+            android:id="@+id/tv_driving_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_4"
+            android:layout_alignLeft="@id/tv_4"
+            android:layout_marginTop="3dp"
+            android:text="13512345678"
+            android:textSize="18sp"
+            android:textColor="#00d8ff" />
+
+        <ImageButton
+            android:id="@+id/bt_driving_tel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_tel" />
+        
+    </RelativeLayout>
+    <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/img_cross_n"
+             />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="4S店服务电话： "
+            android:textColor="#8da6b9" />
+
+        <TextView
+            android:id="@+id/tv_service_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_2"
+            android:layout_alignLeft="@id/tv_2"
+            android:layout_marginTop="3dp"
+            android:text="4008938938"
+            android:textSize="18sp"
+            android:textColor="#00d8ff" />
+
+        <ImageButton
+            android:id="@+id/bt_service_tel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_tel" />
+    </RelativeLayout>
+    <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/img_cross_n"
+             />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="救援电话： "
+            android:textSize="16sp"
+            android:textColor="#8da6b9" />
+
+        <TextView
+            android:id="@+id/tv_rescue_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_5"
+            android:layout_alignLeft="@id/tv_5"
+            android:layout_marginTop="3dp"
+            android:text="40081234567"
+            android:textSize="18sp"
+            android:textColor="#00d8ff" />
+
+        <ImageButton
+            android:id="@+id/bt_rescue_tel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_tel" />
+        
+    </RelativeLayout>
+    <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/img_cross_n"
+             />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" 
+    android:background="@color/transparentinfo">
+
+
+    <TextView
+        android:id="@+id/tv_carnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌号码"
+        android:textColor="@color/apptheme"
+        style="@style/commtextview" />
+    
+    <TextView
+        android:id="@+id/tv_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_carnum"
+        android:text="里程"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        style="@style/commtextview" />
+
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center"
+        android:text="关闭"
+         style="@style/commtextview"
+         android:textSize="18sp" 
+         android:textColor="@color/apptheme"/>
+
+
+    <TextView
+        android:id="@+id/tv_gpstime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_carnum"
+        android:layout_below="@id/tv_carnum"
+        android:text="定位时间" 
+        android:textColor="@color/white"
+        style="@style/commtextview"/>
+   
+    <TextView
+        android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_carnum"
+        android:layout_toRightOf="@id/tv_gpstime"
+        android:text="速度"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        style="@style/commtextview" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gpstime"
+        android:text="正在查询地址，请稍候..."
+        android:textColor="@color/white"
+        android:gravity="left"
+        style="@style/commtextview"
+        android:singleLine="false"/>
+</RelativeLayout>

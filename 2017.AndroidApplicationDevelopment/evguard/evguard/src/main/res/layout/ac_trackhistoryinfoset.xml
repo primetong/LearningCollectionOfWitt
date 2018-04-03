@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customtextbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index_pager"
+    android:orientation="vertical" >
+
+    <com.evguard.customview.AppTitleBar
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.evguard.customview.CustomTextButton
+        android:id="@+id/ctb_carnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        customtextbutton:TextButton_Context="2"
+        customtextbutton:TextButton_Tip="车牌号码" /> 
+
+   <!--  <com.evguard.customview.CustomTextButton
+        android:id="@+id/ctb_fasttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        customtextbutton:TextButton_Context="今天"
+        customtextbutton:TextButton_Tip="快速选择" /> -->
+
+    <com.evguard.customview.CustomTextButton
+        android:id="@+id/ctb_begintime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        customtextbutton:TextButton_Context="2"
+        customtextbutton:TextButton_Tip="开始时间" />
+
+    <com.evguard.customview.CustomTextButton
+        android:id="@+id/ctb_endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        customtextbutton:TextButton_Context="2"
+        customtextbutton:TextButton_Tip="结束时间" />
+
+   
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_login"
+        android:padding="3dp"
+        android:text="开始回放"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

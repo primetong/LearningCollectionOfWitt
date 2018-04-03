@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <!--  <rotate
+        android:duration="10000"
+        android:fromDegrees="20"        
+        android:toDegrees="0" 
+        android:repeatCount="10"
+        android:fillAfter="true"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator" /> -->
+    <!-- <translate 
+        android:fromXDelta="-100%p"
+        android:toXDelta="0"/> -->
+    
+   <translate
+        android:fromXDelta="-35" 
+        android:toXDelta="35" 
+        android:duration="1000" 
+        android:repeatCount="-1"
+        android:repeatMode="reverse"
+        android:interpolator="@+anim/cycle_7" /> 
+
+</set>
+<!--
+    rotate 旋转动画效果    
+    interpolator 指定一个动画的插入器，用来控制动画的速度变化    
+    fromDegrees 属性为动画起始时物件的角度     
+    toDegrees 属性为动画结束时物件旋转的角度,+代表顺时针    
+    duration 属性为动画持续时间,以毫秒为单位
+-->
+<!-- 透明度的渐进变化 -->
+<!-- <alpha xmlns:android="http://schemas.android.com/apk/res/android"
+       android:interpolator="@android:anim/accelerate_interpolator"
+       android:fromAlpha="0.0" android:toAlpha="1.0"
+       android:duration="@android:integer/config_longAnimTime" /> -->

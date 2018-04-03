@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:\Android\Android Studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/asynchrony" />
+            <option value="$PROJECT_DIR$/audreyView" />
+            <option value="$PROJECT_DIR$/evguard" />
+            <option value="$PROJECT_DIR$/exception" />
+            <option value="$PROJECT_DIR$/security" />
+            <option value="$PROJECT_DIR$/updating" />
+            <option value="$PROJECT_DIR$/web" />
+            <option value="$PROJECT_DIR$/xCLCharts" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
