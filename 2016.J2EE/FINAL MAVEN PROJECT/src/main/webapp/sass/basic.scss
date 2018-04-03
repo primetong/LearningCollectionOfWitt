@@ -1,0 +1,137 @@
+/**
+ * @file 	common.scss
+ * @version testing
+ * @time	2016.02.22
+ *
+ * @section DESCRIPTION
+ *
+ * 每个网页都会包含的公共文件。
+ * 定义页面整体的基本参数。
+ * 
+ */
+
+@charset "utf-8";
+
+@import "predefine";
+
+/***********************
+ *	clearfix
+ ***********************/
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/***********************
+ *	common/reset
+ ***********************/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/***********************
+ *	tag
+ ***********************/
+
+p {
+    ;
+}
+
+a {
+    color: $link-color;
+}
+
+a, a:link, a:visited, a:hover {
+    text-decoration: none;
+}
+
+input,
+textarea {
+	font:normal 400 $font-size-input $basic-fonts;
+}
+
+/***********************
+ *	body
+ ***********************/
+
+#wrapper {
+    overflow: hidden;
+	min-width: $view-width-min;
+    min-height: 100vh;
+    text-align: center;
+    font:normal 400 $font-size-normal $basic-fonts;
+	color: $font-color;
+    background: $body-background-color;
+    background: $body-background-img;
+}
+
+#container {
+    overflow: hidden;
+    width: 100%;
+	min-width: $view-width-min;
+
+    //               full height - footer margin - footer height
+	min-height: calc(100vh - 64px - 1rem);
+}
+
+#content {
+    overflow: hidden;
+    margin: $header-height auto 0 auto;
+	max-width: $view-width-max;
+
+	>#left {
+		float: left;
+		width: 70%;
+		margin: 16px auto 0 auto;
+	}
+
+	>#right {
+		float: right;
+		width: 29%;
+		margin: 16px auto 0 auto;
+	}
+}
+
+header {
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    @include backface-visibility(hidden);
+}
+
+footer {
+	overflow: hidden;
+	margin: 10px auto;
+    font-size: $font-size-small;
+}
+
+
+

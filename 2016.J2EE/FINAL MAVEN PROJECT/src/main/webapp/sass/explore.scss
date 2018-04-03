@@ -1,0 +1,30 @@
+﻿/**
+ * @file 	explore.scss
+ * @version testing
+ * @time	2016.02.26
+ *
+ * @section DESCRIPTION
+ *
+ * 控制用户页面的效果
+ * 
+ */
+
+@charset "utf-8";
+
+@import "parts";
+
+
+/***********************
+ *		body
+ ***********************/
+
+#container {
+	background-color: #FCFCFC;
+	@include box-shadow(0 0 1px rgba(0, 0, 0, 0.3), 0 0 128px rgba(0, 0, 0, 0.05) inset);
+}
+
+header {
+	@extend %header.default;
+}
+
+

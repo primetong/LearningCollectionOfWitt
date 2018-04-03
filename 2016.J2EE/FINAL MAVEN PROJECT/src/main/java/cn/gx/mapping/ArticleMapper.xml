@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.gx.dao.ArticleMapper">
+	<resultMap id="BaseResultMap" type="cn.gx.model.Article">
+		<id column="aid" property="aid" jdbcType="INTEGER" />
+		<result column="uid" property="uid" jdbcType="INTEGER" />
+		<result column="title" property="title" jdbcType="VARCHAR" />
+		<result column="creationDate" property="creationdate" jdbcType="TIMESTAMP" />
+		<result column="isPrivate" property="isprivate" jdbcType="BIT" />
+	</resultMap>
+	<resultMap id="ResultMapWithBLOBs" type="cn.gx.model.Article"
+		extends="BaseResultMap">
+		<result column="content" property="content" jdbcType="LONGVARCHAR" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		aid, uid, title, creationDate, isPrivate
+	</sql>
+	<sql id="Blob_Column_List">
+		content
+	</sql>
+	<select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		from article
+		where aid = #{aid,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from
+		article
+		where aid = #{aid,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="cn.gx.model.Article"
+		useGeneratedKeys="true" keyProperty="aid">
+		insert into article (aid, uid,
+		title,
+		creationDate, isPrivate, content
+		)
+		values
+		(#{aid,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER},
+		#{title,jdbcType=VARCHAR},
+		#{creationdate,jdbcType=TIMESTAMP},
+		#{isprivate,jdbcType=BIT}, #{content,jdbcType=LONGVARCHAR}
+		)
+	</insert>
+	<insert id="insertSelective" parameterType="cn.gx.model.Article"
+		useGeneratedKeys="true" keyProperty="aid">
+		insert into article
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="aid != null">
+				aid,
+			</if>
+			<if test="uid != null">
+				uid,
+			</if>
+			<if test="title != null">
+				title,
+			</if>
+			<if test="creationdate != null">
+				creationDate,
+			</if>
+			<if test="isprivate != null">
+				isPrivate,
+			</if>
+			<if test="content != null">
+				content,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="aid != null">
+				#{aid,jdbcType=INTEGER},
+			</if>
+			<if test="uid != null">
+				#{uid,jdbcType=INTEGER},
+			</if>
+			<if test="title != null">
+				#{title,jdbcType=VARCHAR},
+			</if>
+			<if test="creationdate != null">
+				#{creationdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="isprivate != null">
+				#{isprivate,jdbcType=BIT},
+			</if>
+			<if test="content != null">
+				#{content,jdbcType=LONGVARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="cn.gx.model.Article">
+		update article
+		<set>
+			<if test="uid != null">
+				uid = #{uid,jdbcType=INTEGER},
+			</if>
+			<if test="title != null">
+				title = #{title,jdbcType=VARCHAR},
+			</if>
+			<if test="creationdate != null">
+				creationDate = #{creationdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="isprivate != null">
+				isPrivate = #{isprivate,jdbcType=BIT},
+			</if>
+			<if test="content != null">
+				content = #{content,jdbcType=LONGVARCHAR},
+			</if>
+		</set>
+		where aid = #{aid,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.gx.model.Article">
+		update
+		article
+		set uid = #{uid,jdbcType=INTEGER},
+		title =
+		#{title,jdbcType=VARCHAR},
+		creationDate =
+		#{creationdate,jdbcType=TIMESTAMP},
+		isPrivate =
+		#{isprivate,jdbcType=BIT},
+		content = #{content,jdbcType=LONGVARCHAR}
+		where aid = #{aid,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="cn.gx.model.Article">
+		update article
+		set
+		uid = #{uid,jdbcType=INTEGER},
+		title = #{title,jdbcType=VARCHAR},
+		creationDate = #{creationdate,jdbcType=TIMESTAMP},
+		isPrivate =
+		#{isprivate,jdbcType=BIT}
+		where aid = #{aid,jdbcType=INTEGER}
+	</update>
+
+	<!-- additional -->
+	<select id="selectAllByUid" resultMap="ResultMapWithBLOBs">
+		select
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		from article
+		where uid = #{uid,jdbcType=INTEGER}
+		order by creationDate DESC
+		limit #{offset,jdbcType=INTEGER},#{count,jdbcType=INTEGER}
+	</select>
+	<select id="countAllByUid" resultType="java.lang.Integer">
+		select count(*)
+		from article
+		where uid = #{uid,jdbcType=INTEGER}
+	</select>
+	<select id="selectPublicByUid" resultMap="ResultMapWithBLOBs">
+		select
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		from article
+		where uid = #{uid,jdbcType=INTEGER}
+		and not isprivate
+		order by creationDate DESC
+		limit #{offset,jdbcType=INTEGER},#{count,jdbcType=INTEGER}
+	</select>
+	<select id="countPublicByUid" resultType="java.lang.Integer">
+		select count(*)
+		from article
+		where uid = #{uid,jdbcType=INTEGER}
+		and not isprivate
+	</select>
+	<select id="selectPublicByKeyword" resultMap="ResultMapWithBLOBs">
+		select
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		from article
+		where not isprivate
+		and title like concat(concat('%',#{keyword,jdbcType=VARCHAR}),'%' )
+		order by creationDate DESC
+		limit #{offset,jdbcType=INTEGER},#{count,jdbcType=INTEGER}
+	</select>
+	<select id="countPublicByKeyword" resultType="java.lang.Integer">
+		select count(*)
+		from article
+		where not isprivate
+		and title like concat(concat('%',#{keyword,jdbcType=VARCHAR}),'%' )
+	</select>
+</mapper>

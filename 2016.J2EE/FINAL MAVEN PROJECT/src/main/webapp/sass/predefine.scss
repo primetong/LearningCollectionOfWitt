@@ -1,0 +1,143 @@
+/**
+ * @file 	predefine.scss
+ * @version testing
+ * @time	2016.02.22
+ *
+ * @section DESCRIPTION
+ *
+ * 一些 mixin、基础的效果，公共文件
+ * 
+ */
+
+@charset "utf-8";
+
+/***********************
+ *	define
+ ***********************/
+
+$basic-fonts           	: Helvetica, Georgia, Tahoma, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+
+$abstract-height		: 200px;
+$link-color 			: #7B9EBD;
+
+$font-color				: #536D76;
+$font-size-normal		: 18px;
+$font-size-input		: 16px;
+$font-size-small		: 16px;
+
+$button-background-color: #EEE;
+$button-background-color-hover: #F6F6F7;
+
+$header-height			: 48px;
+$header-theme-color 	: #FFF;
+$header-background-color: #DDF;
+
+$header-icon-padding	: 0px;
+$header-icon-size		: $header-height - $header-icon-padding * 2;
+$header-menu-width		: 160px;
+
+
+$body-background-color 	: #F6F9FA;
+$body-background-img 	: url("data:image/gif;base64,R0lGODlhBgAGAJEAAAAAAP///9zg4////yH5BAEAAAMALAAAAAAGAAYAAAIJ3HSGu+nXUFoFADs=");
+
+$homepage-hr-color 		: #EEF;
+
+$view-width-max			: 1280px;
+$view-width-min			: 560px;
+
+/***********************
+ *      udg
+ ***********************/
+
+//----------------------------
+$prefix-for-webkit   : true !default;
+$prefix-for-mozilla  : true !default;
+$prefix-for-microsoft: true !default;
+$prefix-for-opera    : true !default;
+$prefix-for-spec     : true !default;
+
+// prefixer
+//----------------------------
+@mixin prefixer ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+
+    @if $prefix == webkit and $prefix-for-webkit == true {
+      -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz and $prefix-for-mozilla == true {
+      -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms and $prefix-for-microsoft == true {
+      -ms-#{$property}: $value;
+    }
+    @else if $prefix == o and $prefix-for-opera == true {
+      -o-#{$property}: $value;
+    }
+    @else if $prefix == spec and $prefix-for-spec == true {
+      #{$property}: $value;
+    }
+    @else {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin prefixer-p ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+
+    @if $prefix == webkit and $prefix-for-webkit == true {
+      -webkit-#{$property}: -webkit-#{$value};
+    }
+    @else if $prefix == moz and $prefix-for-mozilla == true {
+      -moz-#{$property}: -moz-#{$value};
+    }
+    @else if $prefix == ms and $prefix-for-microsoft == true {
+      -ms-#{$property}: -ms-#{$value};
+    }
+    @else if $prefix == o and $prefix-for-opera == true {
+      -o-#{$property}: -o-#{$value};
+    }
+    @else if $prefix == spec and $prefix-for-spec == true {
+      #{$property}: $value;
+    }
+    @else {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+/* minin */
+
+@mixin backface-visibility($value) {
+    @include prefixer(backface-visibility, $value, webkit moz ms o spec);
+}
+
+@mixin box-shadow($va_value...) {
+    @include prefixer(box-shadow, $va_value, webkit moz ms o spec);
+}
+
+@mixin border-radius($value) {
+    @include prefixer(border-radius, $value, webkit moz ms o spec);
+}
+
+@mixin transform($va_value...) {
+	@include prefixer(transform, $va_value, webkit moz ms o spec);
+}
+
+@mixin transition-delay($value) {
+	@include prefixer(transition-delay, $value, webkit moz ms o spec);
+}
+
+@mixin transition($va_value...) {
+	@include prefixer(transition, $va_value, webkit moz ms o spec);
+}
+
+@mixin transition-transform($va_value...) {
+	@include prefixer-p(transition, $va_value, webkit moz ms o spec);
+}
+
+@mixin no-select() {	
+	cursor: default;
+	@include prefixer(user-select, none, webkit moz ms o spec);}
+
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.gx.dao.UserMapper">
+	<resultMap id="BaseResultMap" type="cn.gx.model.User">
+		<id column="uid" property="uid" jdbcType="INTEGER" />
+		<result column="username" property="username" jdbcType="VARCHAR" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
+		<result column="mail" property="mail" jdbcType="VARCHAR" />
+		<result column="registrationDate" property="registrationdate"
+			jdbcType="DATE" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		uid, username, password, mail, registrationDate
+	</sql>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from user_info
+		where uid = #{uid,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from
+		user_info
+		where uid = #{uid,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="cn.gx.model.User"
+		useGeneratedKeys="true" keyProperty="uid">
+		insert into user_info (uid,
+		username, password,
+		mail, registrationDate)
+		values
+		(#{uid,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR},
+		#{mail,jdbcType=VARCHAR},
+		#{registrationdate,jdbcType=DATE})
+	</insert>
+	<insert id="insertSelective" parameterType="cn.gx.model.User"
+		useGeneratedKeys="true" keyProperty="uid">
+		insert into user_info
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="uid != null">
+				uid,
+			</if>
+			<if test="username != null">
+				username,
+			</if>
+			<if test="password != null">
+				password,
+			</if>
+			<if test="mail != null">
+				mail,
+			</if>
+			<if test="registrationdate != null">
+				registrationDate,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="uid != null">
+				#{uid,jdbcType=INTEGER},
+			</if>
+			<if test="username != null">
+				#{username,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				#{password,jdbcType=VARCHAR},
+			</if>
+			<if test="mail != null">
+				#{mail,jdbcType=VARCHAR},
+			</if>
+			<if test="registrationdate != null">
+				#{registrationdate,jdbcType=DATE},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="cn.gx.model.User">
+		update user_info
+		<set>
+			<if test="username != null">
+				username = #{username,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				password = #{password,jdbcType=VARCHAR},
+			</if>
+			<if test="mail != null">
+				mail = #{mail,jdbcType=VARCHAR},
+			</if>
+			<if test="registrationdate != null">
+				registrationDate = #{registrationdate,jdbcType=DATE},
+			</if>
+		</set>
+		where uid = #{uid,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="cn.gx.model.User">
+		update user_info
+		set username = #{username,jdbcType=VARCHAR},
+		password =
+		#{password,jdbcType=VARCHAR},
+		mail = #{mail,jdbcType=VARCHAR},
+		registrationDate = #{registrationdate,jdbcType=DATE}
+		where uid =
+		#{uid,jdbcType=INTEGER}
+	</update>
+
+	<!-- additional -->
+	<select id="getAll" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from user_info
+	</select>
+	<select id="mail2Uid" resultType="java.lang.Integer"
+		parameterType="java.lang.String">
+		select uid
+		from user_info
+		where
+		mail = #{mail,jdbcType=VARCHAR}
+		limit 1
+	</select>
+	<select id="username2Uid" resultType="java.lang.Integer"
+		parameterType="java.lang.String">
+		select uid
+		from user_info
+		where
+		username = #{username,jdbcType=VARCHAR}
+		limit 1
+	</select>
+	<select id="mail2User" resultType="cn.gx.model.User"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from user_info
+		where
+		mail = #{mail,jdbcType=VARCHAR}
+		limit 1
+	</select>
+	<select id="username2User" resultType="cn.gx.model.User"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from user_info
+		where
+		username = #{username,jdbcType=VARCHAR}
+		limit 1
+	</select>
+	<select id="isPasswordCorrect" resultType="java.lang.Boolean">
+		select true
+		from user_info
+		where
+		uid = #{uid,jdbcType=INTEGER}
+		and
+		password = #{password,jdbcType=VARCHAR}
+		limit 1
+	</select>
+</mapper>

@@ -1,0 +1,564 @@
+/**
+ * @file 	parts.scss
+ * @version testing
+ * @time	2016.02.22
+ * @section DESCRIPTION
+ *
+ * 处理各种 header、banner、footer等等的样式
+ * 
+ */
+
+@charset "utf-8";
+
+@import "predefine";
+
+/***********************
+ *		header
+ ***********************/
+
+%header.embed {
+	overflow: visible;
+	width: 100%;
+	min-width: $view-width-min;
+	min-height: $header-height;
+	
+	#view {
+
+		min-height: $header-height;
+		@include no-select();
+
+		.logo {
+			float: left;
+			margin: 0 1em;
+			font-size: 2em;
+			font-weight: 900;
+			text-shadow: 0 0 24px darken($header-background-color, 20%);
+		
+			a{
+				margin: 0 auto;
+				color: $header-theme-color;
+				&::before{
+					content: "WITT";
+				}
+			
+				&:hover::before{
+					content: "SLYM";
+				}
+			}
+		
+		}
+	
+		nav.menu {
+			float: left;
+			margin: 0.6em 2em;
+		
+			ul {
+				margin-left: 1em;
+				margin-right: 1em;
+			
+				li {
+					display: inline-block;
+					color: $header-theme-color;
+					font-size: 18px;
+					font-weight: 900;
+					margin-left: 1em;
+					margin-right: 1em;
+
+					a {
+						color: $header-theme-color;
+						text-shadow: 0 0 2px darken($header-background-color, 20%);
+					}
+				
+					a.active {
+						padding-bottom: 4px;
+						border-bottom: 3px solid $header-theme-color;
+					}
+
+					> a:hover {
+						@extend a.active;
+						text-shadow: 0 0 32px lighten($header-background-color, 40%);
+					}
+				
+					> a,
+					> a:visited,
+					> a:active {
+						@include transition(all .3s ease-in-out);
+					}
+				}
+			}
+		}
+
+		nav.user {
+
+			float: right;
+			width: $header-icon-size;
+			height: $header-icon-size;
+			margin: $header-icon-padding 2em;
+
+			border: 1px solid #DDF;
+			@include border-radius(50%);
+			@include box-shadow(0 0 2px 1px rgba(0.9, 0.9, 1, 0.5));
+
+			a {
+				display: block;
+				img {
+					width: $header-icon-size - 2px;
+					height: $header-icon-size - 2px;
+					@include border-radius(50%);
+				}
+			}
+
+			ul {
+				display: none;
+				position: absolute;
+				margin: (-5px-2*$header-icon-padding) 0px 0px (-2 * $header-icon-padding - $header-menu-width + 46px);
+				width: $header-menu-width;
+				font-size: $font-size-small;
+
+				border: 1px solid darken($header-background-color, 2);
+				background: lighten($header-background-color, 5);
+				@include border-radius(3px);
+				@include box-shadow(inset 1px 1px 12px rgba(220, 220, 220, 0.6));
+
+				li {
+					margin: 0.2em 0;
+					line-height: 1.6em;
+					letter-spacing: 0.33em;
+					a {
+						display: block;
+						text-shadow: 0px 0px 2px #DDF;
+
+						&:hover {
+							background: lighten($header-background-color, 10);
+						}
+					}
+				}
+			}
+
+			&:hover {
+			
+				ul {
+					display: block;
+				}
+			}
+		}
+
+	}
+}
+
+%header.default {
+
+	position: fixed;
+	top: 0px;
+	z-index: 11;
+
+	background-color: $header-background-color;
+	border: 1px solid lighten($header-background-color, 5%);
+	@include box-shadow(0 1px 8px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 0, 0, 0.05) inset);
+
+	@extend %header.embed;
+
+	#view {
+		max-width: $view-width-max;
+		margin: 0 auto;
+	}
+}
+
+
+/***********************
+ *		banner
+ ***********************/
+
+%banner {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	height: 720px;
+	width: 100%;
+	max-width: 1920px;
+	
+	div.txt {
+		margin-top: 22vh;
+		font-weight: 900;
+		@include no-select();
+
+		h1 {
+			width: 70%;
+			margin: 0 auto;
+			color: #FFF;
+			font-size: 10vw;
+			font-weight: 1000;
+			text-align: center;
+			text-shadow: 0 0 16px #000;
+		}	
+		h1:nth-child(1) {
+			font-size: 5vw;
+			text-align: left;
+			letter-spacing: 0.5em;
+		}
+		h1:nth-child(2) {
+			text-align: right;
+		}
+	}
+
+	@include box-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
+}
+
+/***********************
+ *		footer
+ ***********************/
+
+footer {
+	margin: 32px auto;
+    font-size: 0.8em;
+	max-width: $view-width-max;
+}
+
+
+/***********************
+ *		form
+ ***********************/
+
+form {
+
+	margin: 0.5em;
+
+	>label {
+		display: block;
+		margin: 1em;
+
+		>* {
+			margin: 0.2em 0em;
+		}
+
+		>span {
+			float: left;
+			@include no-select();
+		}
+	}
+	
+	input, textarea{
+		padding: 0.1em 0.5em;
+		line-height: 1.5em;
+        border: 1px solid #999;
+        @include border-radius(6px);
+		@include box-shadow(inset 1px 1px 4px rgba(220, 220, 220, 0.3));
+        @include transition(box-shadow 0.15s ease-in-out);
+    }
+	
+	input:focus, textarea:focus{
+	    outline: none;
+	    border: 1px solid #7B9EBD;
+	    @include box-shadow(0 0 6px rgba(180, 180, 240, 0.6));
+	}
+	
+	input[type=submit], input[type=reset] {
+		padding: 0 0.8em;
+		text-align: center;
+		color: #536d76;
+		background-color: $button-background-color;
+		border: 1px solid #7B9EBD;
+		cursor: pointer;
+	}
+
+	input[type=submit]:hover, input[type=reset]:hover {
+		background-color:$button-background-color-hover;
+	}
+}
+
+
+form.searchbox {
+	float: left;
+	width: 360px;
+	margin: 0.5em 1em;
+
+	input[type=text] {
+		width: 260px;
+	}
+}
+
+form.login, form.signup, form.setting {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+	.alert {
+		font-size: 0.8em;
+		color: red;
+	}
+
+	input {
+		width: 100%;
+	}
+
+	input[type=submit], input[type=reset] {
+		width: 100%;
+	}
+}
+
+form.editor {
+
+	margin: 0;
+	padding: 1rem;
+
+	#title {
+		width: 100%;
+	}
+
+	.simditor {
+		margin: 1rem 0;
+	}
+
+
+	#submit {
+		width: 100%;
+		margin: 1em 0;
+	}
+
+	#message {
+		font-size: 0.8em;
+		color: red;
+	}
+
+	ul {
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 0.8em;
+		text-align: left;
+
+		li {
+			display: block;
+
+			label {
+				width: auto;
+				>* {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+
+form.newArticle {
+	margin: 1rem 0;
+	padding: 0;
+	width: 100%;
+
+	input[type=submit] {
+		width: 100%;
+		font-size: 1em;
+		font-weight: 100;
+		line-height: 1.5em;
+		letter-spacing: 1em;
+		color: lighten($font-color, 20%);
+		@include border-radius(3px);
+	}
+}
+
+/***********************
+ *		user card
+ ***********************/
+
+.usercard {
+
+	margin: 1em;
+
+	h1 {
+		letter-spacing: 0.1em;
+		font-weight: 900;
+		line-height: 1.5em;
+		text-shadow: 0px 0px 3px #99F;
+		cursor: default;
+	}
+
+	span {
+		line-height: 1.2em;
+		font-size: $font-size-small;
+		text-shadow: 0px 0px 1px #99F;
+		cursor: default;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border: 8px solid #FFF;
+		@include border-radius(4px);
+		@include box-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+	}
+}
+
+/***********************
+ *		articleAbstract
+ ***********************/
+
+.articleAbstract {
+
+	overflow: hidden;
+	width: 100%;
+	height: $abstract-height;
+	margin: 1em 0;
+	text-align: left;
+	display: block;
+	border: 1px solid darken($header-background-color, 5%);
+	@include border-radius(4px);
+	
+	&>.left {
+		margin: 20px;
+		float: left;
+		height: $abstract-height - 40px;
+		width: $abstract-height - 40px;
+		border: 2px solid darken($header-background-color, 5%); 
+		@include border-radius(4px);
+
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+			@include border-radius(4px);
+		}
+	}
+
+	&>.right {
+		margin-left: $abstract-height;
+		padding: 1em;
+		height: 100%;
+		cursor: default;
+
+		&>.title {
+			line-height: 1.2em;
+			width: 100%;
+			font-size: 2em;
+			font-weight: 900;
+			letter-spacing: 0.2em;
+			white-space: nowrap;
+		}
+
+		&>.author {
+			float: left;
+			line-height: 2em;
+			font-size: 0.8em;
+			width: 50%;
+			white-space: nowrap;
+			
+			&>.edit,
+			&>.delete {
+				display:inline-block;
+				padding:0 0.2rem;
+			}
+			&>.edit {
+			}
+
+			&>.delete {
+				form {
+					margin: 0;
+					padding: 0;
+					input {
+						margin: 0;
+						font-size: 0.9em;
+						background: none;
+						border: none;
+						@include box-shadow(unset);
+					}
+				}
+
+				* {
+					color: lighten(red, 20%);
+				}
+			}
+		}
+
+		&>.date {
+			line-height: 2em;
+			font-size: 0.8em;
+			width: 50%;
+			white-space: nowrap;
+		}
+
+		&>.content {
+			float: left;
+			line-height: 1.6em;
+			letter-spacing: 0.1em;
+			font-size: 0.9em;
+			width: 100%;
+		}
+	}
+
+	&:hover {
+		@include box-shadow(0 0 1px rgba(0, 0, 0, 0.3), 0 0 128px rgba(0, 0, 0, 0.05) inset);
+	}
+}
+
+
+
+
+div.intro {
+
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	margin: 1em auto;
+	width: 100%;
+	
+	h2 {
+		margin: 0 1.5em;
+		padding: 0.2em 2em 0.1em 0.5em;
+		letter-spacing: 0.125em;
+		font-weight: 100;
+		font-size: 1.1em;
+		text-align: left;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 2px #99F;
+	}
+	
+	hr {
+		width: 92%;
+		border-bottom: 8px groove $homepage-hr-color;
+		@include box-shadow(0 -8px 12px rgba(0, 0, 0, 0.1));
+	}
+	
+	ul {
+		margin: 8px 1em 2px 2em;
+		text-align: left;
+		Line-height: 1.5em;
+		letter-spacing: 0.128em;
+		text-shadow: 0px 0px 0px #000;
+		
+		li {
+			a::before{
+				display: inline-block;
+				content: '';
+				margin: 0 10px;
+				border-bottom:0.4em solid transparent;
+				border-top:0.4em solid transparent;
+				border-left:0.4em solid #AAAAFF;
+			}
+			
+			a:hover::before {
+				border-left:0.4em solid #5B7E9D;
+			}
+		}
+	}
+}
+
+.pageList {
+
+	&>ol{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin: 1rem 0;
+
+		&>li{
+			line-height: 1.8em;
+			margin-right: 1rem;
+			@include no-select();
+
+			span {
+				border: 1px solid #DDF;
+				padding: 0 0.5em;
+				@include border-radius(2px);
+			}
+		}
+	}
+}
+
