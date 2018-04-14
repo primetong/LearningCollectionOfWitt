@@ -44,16 +44,16 @@ def evaluate(mnist):
             time.sleep(EVAL_INTERVAL_SECS)
 #主程序
 def main(argv=None):
-    mnist = input_data.read_data_sets("/home/witt/witt/Python/TensorFlow.Examples/Chapter05/MNIST_data", one_hot=True)#训练集的路径（witt是我的英文名，第二次作业，1701210346-陈为通）
+    mnist = input_data.read_data_sets("/home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_data", one_hot=True)#训练集的路径
     evaluate(mnist)
 
 if __name__ == '__main__':
     main()
 """
-Extracting /home/witt/witt/Python/TensorFlow.Examples/Chapter05/MNIST_data/train-images-idx3-ubyte.gz
-Extracting /home/witt/witt/Python/TensorFlow.Examples/Chapter05/MNIST_data/train-labels-idx1-ubyte.gz
-Extracting /home/witt/witt/Python/TensorFlow.Examples/Chapter05/MNIST_data/t10k-images-idx3-ubyte.gz
-Extracting /home/witt/witt/Python/TensorFlow.Examples/Chapter05/MNIST_data/t10k-labels-idx1-ubyte.gz
+Extracting /home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_data/train-images-idx3-ubyte.gz
+Extracting /home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_data/train-labels-idx1-ubyte.gz
+Extracting /home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting /home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_data/t10k-labels-idx1-ubyte.gz
 2017-10-30 16:43:36.714400: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
 2017-10-30 16:43:36.714434: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
 2017-10-30 16:43:36.714449: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.

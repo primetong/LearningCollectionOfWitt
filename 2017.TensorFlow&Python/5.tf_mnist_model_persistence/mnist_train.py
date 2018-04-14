@@ -12,8 +12,8 @@ LEARNING_RATE_DECAY = 0.99
 REGULARIZATION_RATE = 0.0001
 TRAINING_STEPS = 30000
 MOVING_AVERAGE_DECAY = 0.99
-#模型保存的路径（witt是我的英文名，第二次作业，1701210346-陈为通）
-MODEL_SAVE_PATH="/home/witt/witt/Python/2017.10.23.Chap5/MNIST_model"
+#模型保存的路径
+MODEL_SAVE_PATH="/home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_model"
 #模型保存的文件名
 MODEL_NAME="mnist_model"
 
@@ -42,7 +42,7 @@ def train(mnist):
     with tf.control_dependencies([train_step, variables_averages_op]):
         train_op = tf.no_op(name='train')
 
-    #初始化TensorFLow的持久化类，用于保存与加载模型，作业的要求在这！↓
+    #初始化TensorFLow的持久化类，用于保存与加载模型
     saver = tf.train.Saver()
     #variables_to_restore = variable_averages.variables_to_restore()#变量保存
     #loader = tf.train.Saver(variables_to_restore)#初始化用于加载的持久化类
@@ -65,7 +65,7 @@ def train(mnist):
 
 
 def main(argv=None):
-    mnist = input_data.read_data_sets("/home/witt/witt/Python/TensorFlow.Examples/Chapter05/MNIST_data", one_hot=True)#训练集的路径（witt是我的英文名，第二次作业，1701210346-陈为通）
+    mnist = input_data.read_data_sets("/home/witt/witt/Python/5.tf_mnist_model_persistence/MNIST_data", one_hot=True)#训练集的路径
     train(mnist)
 
 if __name__ == '__main__':
