@@ -12,7 +12,7 @@ idna==2.6
 incremental==17.5.0
 isort==4.2.15
 lazy-object-proxy==1.3.1
-lxml==4.1.0
+lxml==4.6.3
 mccabe==0.6.1
 olefile==0.44
 parsel==1.2.0
