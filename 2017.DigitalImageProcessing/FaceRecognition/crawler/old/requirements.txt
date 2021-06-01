@@ -7,4 +7,4 @@ pip==9.0.1
 requests==2.18.4
 selenium==3.6.0
 setuptools==36.6.0
-urllib3==1.22
+urllib3==1.26.5
