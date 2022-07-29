@@ -26,7 +26,7 @@ pylint==1.7.4
 pyOpenSSL==17.3.0
 pypiwin32==220
 queuelib==1.4.2
-Scrapy==1.4.0
+Scrapy==2.6.2
 selenium==3.6.0
 service-identity==17.0.0
 setuptools==36.6.0
