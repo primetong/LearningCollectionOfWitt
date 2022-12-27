@@ -8,6 +8,6 @@ opencv-contrib-python==3.3.0.10
 opencv-python==3.3.0.10
 pip==9.0.1
 pylint==1.7.4
-setuptools==36.6.0
+setuptools==65.5.1
 six==1.11.0
 wrapt==1.10.11
