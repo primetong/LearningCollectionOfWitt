@@ -6,5 +6,5 @@ lxml==4.1.0
 pip==9.0.1
 requests==2.18.4
 selenium==3.6.0
-setuptools==36.6.0
+setuptools==65.5.1
 urllib3==1.22
